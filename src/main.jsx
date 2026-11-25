@@ -6,4 +6,7 @@ import './styles/base.css';
 import './styles/layout.css';
 import './styles/components.css';
 import './styles/responsive.css';
+import './styles/pinterest-design.css';
+import './styles/interior-design.css';
 createRoot(document.getElementById('root')).render(<BrowserRouter basename="/havenbudget"><App /></BrowserRouter>);
+

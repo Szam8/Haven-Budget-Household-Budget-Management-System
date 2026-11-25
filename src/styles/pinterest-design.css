@@ -1,0 +1,278 @@
+
+/* =====================================
+   HAVENBUDGET PROFESSIONAL DESIGN
+   Black and Rose Pink Theme
+===================================== */
+
+:root {
+    --bg: #120e17;
+    --pink: #f58abf;
+    --bright: #ffd1e7;
+    --border: #53374e;
+}
+
+/* Main website background */
+
+body {
+    background-color: #120e17;
+}
+
+/* LOGIN AND REGISTRATION */
+
+.auth-art {
+    background:
+        linear-gradient(
+            160deg,
+            rgba(20, 10, 24, 0.90),
+            rgba(55, 20, 45, 0.55)
+        ),
+        url('/havenbudget/login-bg.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.auth-art h1 {
+    color: #ffffff;
+    text-shadow: 0 4px 18px #00000080;
+}
+
+.auth-art p {
+    color: #ffe3f1;
+}
+
+.auth-illustration {
+    display: none;
+}
+
+.auth-form {
+    background:
+        radial-gradient(
+            circle at top right,
+            #46243e,
+            #15101c 65%
+        );
+}
+
+.auth-inner {
+    background: rgba(35, 24, 43, 0.92);
+    padding: clamp(18px, 3vw, 30px);
+    border: 1px solid #805170;
+    border-radius: 24px;
+    box-shadow: 0 20px 50px #00000055;
+}
+
+/* HOMEPAGE BANNER */
+
+.hero {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(25, 12, 30, 0.98),
+            rgba(70, 28, 56, 0.85) 45%,
+            rgba(30, 12, 28, 0.25)
+        ),
+        url('/havenbudget/dashboard-bg.jpg');
+
+    background-size: cover;
+    background-position: center 60%;
+    background-repeat: no-repeat;
+
+    min-height: 280px;
+    border-radius: 24px;
+    border: 1px solid #c27ca3;
+    box-shadow: 0 15px 35px #00000044;
+}
+
+.hero img {
+    display: none;
+}
+
+.hero h2 {
+    color: #ffffff;
+    text-shadow: 0 3px 15px #00000088;
+}
+
+/* BACKGROUND FOR ALL SYSTEM PAGES */
+
+.main {
+    background:
+        linear-gradient(
+            rgba(18, 12, 24, 0.88),
+            rgba(18, 12, 24, 0.92)
+        ),
+        url('/havenbudget/dashboard-bg.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* PROFESSIONAL SIDEBAR */
+
+.sidebar {
+    background: linear-gradient(
+        180deg,
+        #28192d,
+        #130e19
+    );
+
+    border-right: 1px solid #65425e;
+}
+
+.sidebar nav a {
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.sidebar nav a:hover {
+    background: #43283e;
+    color: #ffc2e0;
+    transform: translateX(3px);
+}
+
+.sidebar nav a.active {
+    background: linear-gradient(
+        110deg,
+        #693551,
+        #39243f
+    );
+
+    border-color: #ad648c;
+    color: #ffd1e7;
+}
+
+/* TOP NAVIGATION */
+
+.topbar {
+    background: rgba(24, 15, 30, 0.92);
+    backdrop-filter: blur(15px);
+}
+
+/* FINANCIAL CARDS AND PANELS */
+
+.panel,
+.metric {
+    background: linear-gradient(
+        145deg,
+        rgba(44, 29, 51, 0.96),
+        rgba(28, 20, 35, 0.96)
+    );
+
+    border: 1px solid #65425e;
+    border-radius: 18px;
+    box-shadow: 0 8px 28px #00000030;
+}
+
+.metric {
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.metric:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px #ed79b424;
+}
+
+/* MODERN PINK BUTTONS */
+
+.primary {
+    background: linear-gradient(
+        135deg,
+        #ffadd6,
+        #ed7bb6
+    );
+
+    color: #241322;
+    font-weight: 700;
+    border-radius: 12px;
+    box-shadow: 0 5px 16px #ed79b425;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.primary:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px #ed79b455;
+}
+
+/* FORM INPUTS */
+
+input,
+select {
+    background-color: #191220;
+    border-color: #68455e;
+}
+
+input:focus,
+select:focus {
+    border-color: #f58abf;
+    box-shadow: 0 0 0 3px #f58abf22;
+}
+
+/* TRANSACTION AND ADMIN TABLES */
+
+.table-wrap {
+    background: rgba(35, 25, 43, 0.96);
+    border: 1px solid #60415b;
+    border-radius: 18px;
+}
+
+table tbody tr:hover {
+    background-color: #f58abf0c;
+}
+
+/* CUSTOM DELETE DIALOG */
+
+.dialog {
+    background: linear-gradient(
+        145deg,
+        #3b273f,
+        #211725
+    );
+
+    border: 1px solid #ac6d98;
+    border-radius: 22px;
+    box-shadow: 0 20px 70px #00000088;
+}
+
+/* MOBILE RESPONSIVE DESIGN */
+
+@media (max-width: 760px) {
+    .hero {
+        min-height: 220px;
+        padding: 22px;
+        background-position: 65% center;
+    }
+
+    .main {
+        background-attachment: scroll;
+    }
+
+    .auth-inner {
+        padding: 20px;
+    }
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+    .primary,
+    .metric,
+    .sidebar nav a {
+        transition: none;
+    }
+
+    .primary:hover,
+    .metric:hover,
+    .sidebar nav a:hover {
+        transform: none;
+    }
+}
